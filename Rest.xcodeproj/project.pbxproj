@@ -12,8 +12,9 @@
 		A6D7B51C259D0A1500A380E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D7B51A259D0A1500A380E1 /* Main.storyboard */; };
 		A6D7B528259D0A1500A380E1 /* RestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B527259D0A1500A380E1 /* RestTests.swift */; };
 		A6D7B533259D0A1500A380E1 /* RestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B532259D0A1500A380E1 /* RestUITests.swift */; };
-		A6D7B545259D121000A380E1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B544259D121000A380E1 /* TimerViewController.swift */; };
+		A6D7B545259D121000A380E1 /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B544259D121000A380E1 /* RestViewController.swift */; };
 		A6D7B54F259D19BC00A380E1 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B54E259D19BC00A380E1 /* EventMonitor.swift */; };
+		A6D7B57F259D2FF300A380E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B57E259D2FF300A380E1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,9 @@
 		A6D7B52E259D0A1500A380E1 /* RestUIRests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestUIRests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D7B532259D0A1500A380E1 /* RestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestUITests.swift; sourceTree = "<group>"; };
 		A6D7B534259D0A1500A380E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6D7B544259D121000A380E1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A6D7B544259D121000A380E1 /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
 		A6D7B54E259D19BC00A380E1 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		A6D7B57E259D2FF300A380E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 				A6D7B51A259D0A1500A380E1 /* Main.storyboard */,
 				A6D7B51D259D0A1500A380E1 /* Info.plist */,
 				A6D7B51E259D0A1500A380E1 /* Rest.entitlements */,
-				A6D7B544259D121000A380E1 /* TimerViewController.swift */,
+				A6D7B544259D121000A380E1 /* RestViewController.swift */,
 				A6D7B54E259D19BC00A380E1 /* EventMonitor.swift */,
+				A6D7B57E259D2FF300A380E1 /* Constants.swift */,
 			);
 			path = Rest;
 			sourceTree = "<group>";
@@ -257,8 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D7B54F259D19BC00A380E1 /* EventMonitor.swift in Sources */,
-				A6D7B545259D121000A380E1 /* TimerViewController.swift in Sources */,
+				A6D7B545259D121000A380E1 /* RestViewController.swift in Sources */,
 				A6D7B515259D0A1000A380E1 /* AppDelegate.swift in Sources */,
+				A6D7B57F259D2FF300A380E1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

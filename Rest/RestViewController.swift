@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class TimerViewController: NSViewController {
+class RestViewController: NSViewController {
 
     @IBOutlet weak var timeLabel: NSTextField!
     @IBOutlet weak var statusLabel: NSTextField!
@@ -50,23 +50,25 @@ class TimerViewController: NSViewController {
     }
 }
 
-extension TimerViewController {
-  // MARK: Storyboard instantiation
-  static func freshController() -> TimerViewController {
-    //1.
-    let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-    //2.
-    let identifier = NSStoryboard.SceneIdentifier("TimerViewController")
-    //3.
-    guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? TimerViewController else {
-      fatalError("Why cant i find QuotesViewController? - Check Main.storyboard")
+// MARK: Create instance of the view controller
+extension RestViewController {
+    
+  static func freshController() -> RestViewController {
+    // Get reference to the storyboard
+    let storyboard = NSStoryboard(name: NSStoryboard.Name(K.storyboardName), bundle: nil)
+    // Get reference to the view controller
+    let identifier = NSStoryboard.SceneIdentifier(K.storyboardID)
+    // Instantiate the view controller
+    guard let viewController = storyboard.instantiateController(withIdentifier: identifier) as? RestViewController else {
+        fatalError(K.fatalErrorMsg)
     }
-    return viewcontroller
+    
+    return viewController
   }
 }
 
 // MARK: Actions
-extension TimerViewController {
+extension RestViewController {
     
     @IBAction func quitButton(_ sender: NSButton) {
         NSApplication.shared.terminate(sender)

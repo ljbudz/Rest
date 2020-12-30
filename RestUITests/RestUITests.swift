@@ -1,6 +1,6 @@
 //
-//  TestUITests.swift
-//  TestUITests
+//  RestUITests.swift
+//  RestUITests
 //
 //  Created by Lucas Budz on 2020-12-30.
 //

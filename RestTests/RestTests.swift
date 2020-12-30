@@ -1,6 +1,6 @@
 //
-//  TestTests.swift
-//  TestTests
+//  RestTests.swift
+//  RestTests
 //
 //  Created by Lucas Budz on 2020-12-30.
 //

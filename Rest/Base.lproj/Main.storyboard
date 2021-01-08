@@ -685,48 +685,101 @@
             <objects>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RestViewController" id="XfG-lQ-9wD" customClass="RestViewController" customModule="Rest" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="205"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <stackView key="view" distribution="equalSpacing" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="QVQ-Nr-j45">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-qY-dIv">
-                                <rect key="frame" x="170" y="96" width="140" height="59"/>
+                                <rect key="frame" x="153" y="111" width="144" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Kh0-k6-u7x"/>
+                                </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="20:00" id="KyC-Lk-bDL">
                                     <font key="font" metaFont="system" size="50"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jta-fx-ejf">
-                                <rect key="frame" x="210" y="13" width="60" height="32"/>
-                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wqN-dU-ZOV">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="quitButton:" target="XfG-lQ-9wD" id="YI4-Ts-xBq"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-LO-xCH">
-                                <rect key="frame" x="198" y="60" width="84" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Screen Time" id="qll-8a-eIE">
-                                    <font key="font" metaFont="system"/>
+                                <rect key="frame" x="191" y="68" width="69" height="26"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Status" id="qll-8a-eIE">
+                                    <font key="font" metaFont="system" size="22"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <stackView wantsLayer="YES" distribution="fillEqually" orientation="horizontal" alignment="top" spacing="30" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvX-Tb-Vc1">
+                                <rect key="frame" x="98" y="30" width="255" height="20"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7dC-Y3-oEw" userLabel="Action1">
+                                        <rect key="frame" x="-7" y="-7" width="79" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="UgW-Nd-lnj"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Paused" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="466-XA-W51" userLabel="Action">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="actionButton:" target="XfG-lQ-9wD" id="jcf-A2-CXQ"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-Qn-0E3" userLabel="Action2">
+                                        <rect key="frame" x="88" y="-7" width="79" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="dl8-ET-1a7"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fjd-ZJ-29P" userLabel="Action">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="resetButton:" target="XfG-lQ-9wD" id="sF6-oR-NYU"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jta-fx-ejf">
+                                        <rect key="frame" x="183" y="-7" width="79" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="7iA-RR-2xG"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wqN-dU-ZOV">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <color key="contentTintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="quitButton:" target="XfG-lQ-9wD" id="YI4-Ts-xBq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="jta-fx-ejf" firstAttribute="top" secondItem="f1T-LO-xCH" secondAttribute="bottom" constant="20" id="8zt-ig-JjE"/>
-                            <constraint firstItem="ZcC-qY-dIv" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="9SU-HJ-blD"/>
-                            <constraint firstAttribute="bottom" secondItem="jta-fx-ejf" secondAttribute="bottom" constant="20" id="EBn-Iy-ehF"/>
-                            <constraint firstItem="jta-fx-ejf" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="VIg-hX-VgU"/>
-                            <constraint firstItem="f1T-LO-xCH" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="nKA-C7-nKQ"/>
-                            <constraint firstItem="f1T-LO-xCH" firstAttribute="top" secondItem="ZcC-qY-dIv" secondAttribute="bottom" constant="20" id="nfa-Pw-B2g"/>
-                            <constraint firstItem="ZcC-qY-dIv" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="qTS-bi-yzr"/>
-                        </constraints>
-                    </view>
+                        <edgeInsets key="edgeInsets" left="0.0" right="0.0" top="30" bottom="30"/>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
                     <connections>
+                        <outlet property="actionLabel" destination="7dC-Y3-oEw" id="7c8-MQ-dc0"/>
                         <outlet property="statusLabel" destination="f1T-LO-xCH" id="KhL-L6-9Ma"/>
                         <outlet property="timeLabel" destination="ZcC-qY-dIv" id="7Iu-2l-bFc"/>
                     </connections>

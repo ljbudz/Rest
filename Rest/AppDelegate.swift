@@ -22,12 +22,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Initialize the status bar icon
         if let button = statusItem.button {
-            button.title = NSString(string: "Rest") as String
+            button.title = "REST"
             button.action = #selector(togglePopover(_:))
         }
         
         // Initialize the view controller for the status bar popover
-        popover.contentViewController = RestViewController.freshController()
+        let controller = RestViewController.freshController()
+        if let button = statusItem.button {
+            controller.setStatusButton(button)
+        }
+        popover.contentViewController = controller
         
         // Initialize event montior for clicking outside the status bar popover
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in

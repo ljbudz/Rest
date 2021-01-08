@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A63CAF4D25A7DAC800BD89DA /* RestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CAF4C25A7DAC800BD89DA /* RestModel.swift */; };
+		A63CAF5225A7E58F00BD89DA /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CAF5125A7E58F00BD89DA /* Stage.swift */; };
+		A63CAF5725A803D400BD89DA /* Keys.m4r in Resources */ = {isa = PBXBuildFile; fileRef = A63CAF5625A803D300BD89DA /* Keys.m4r */; };
 		A6D7B515259D0A1000A380E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7B514259D0A1000A380E1 /* AppDelegate.swift */; };
 		A6D7B519259D0A1500A380E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D7B518259D0A1500A380E1 /* Assets.xcassets */; };
 		A6D7B51C259D0A1500A380E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D7B51A259D0A1500A380E1 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A63CAF4C25A7DAC800BD89DA /* RestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestModel.swift; sourceTree = "<group>"; };
+		A63CAF5125A7E58F00BD89DA /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		A63CAF5625A803D300BD89DA /* Keys.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = Keys.m4r; sourceTree = "<group>"; };
 		A6D7B511259D0A1000A380E1 /* Rest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D7B514259D0A1000A380E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D7B518259D0A1500A380E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		A6D7B513259D0A1000A380E1 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
+				A63CAF5625A803D300BD89DA /* Keys.m4r */,
 				A6D7B514259D0A1000A380E1 /* AppDelegate.swift */,
 				A6D7B518259D0A1500A380E1 /* Assets.xcassets */,
 				A6D7B51A259D0A1500A380E1 /* Main.storyboard */,
@@ -108,6 +115,8 @@
 				A6D7B544259D121000A380E1 /* RestViewController.swift */,
 				A6D7B54E259D19BC00A380E1 /* EventMonitor.swift */,
 				A6D7B57E259D2FF300A380E1 /* Constants.swift */,
+				A63CAF4C25A7DAC800BD89DA /* RestModel.swift */,
+				A63CAF5125A7E58F00BD89DA /* Stage.swift */,
 			);
 			path = Rest;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63CAF5725A803D400BD89DA /* Keys.m4r in Resources */,
 				A6D7B519259D0A1500A380E1 /* Assets.xcassets in Resources */,
 				A6D7B51C259D0A1500A380E1 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63CAF5225A7E58F00BD89DA /* Stage.swift in Sources */,
 				A6D7B54F259D19BC00A380E1 /* EventMonitor.swift in Sources */,
+				A63CAF4D25A7DAC800BD89DA /* RestModel.swift in Sources */,
 				A6D7B545259D121000A380E1 /* RestViewController.swift in Sources */,
 				A6D7B515259D0A1000A380E1 /* AppDelegate.swift in Sources */,
 				A6D7B57F259D2FF300A380E1 /* Constants.swift in Sources */,
